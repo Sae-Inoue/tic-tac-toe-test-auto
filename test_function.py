@@ -13,18 +13,18 @@ class TestTicTacToe(unittest.TestCase):
 
     def test_is_win(self):
         board_X = [['X', 'O', 'O'],
-                       [' ', 'X', ' '],
-                       [' ', ' ', 'X']]
+                   [' ', 'X', ' '],
+                   [' ', ' ', 'X']]
         self.assertFalse(is_win('X'))
 
         board_O = [['X', 'O', 'O'],
-                       ['X', 'O', ' '],
-                       ['O', 'X', ' ']]
+                   ['X', 'O', ' '],
+                   ['O', 'X', ' ']]
         self.assertFalse(is_win('O'))
 
         board_none = [['X', 'O', 'O'],
-                        [' ', ' ', ' '],
-                        [' ', 'X', ' ']]
+                      [' ', ' ', ' '],
+                      [' ', 'X', ' ']]
         self.assertFalse(is_win('X'))
         self.assertFalse(is_win('O'))
 
